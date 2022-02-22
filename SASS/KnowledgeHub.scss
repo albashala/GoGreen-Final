@@ -1,0 +1,95 @@
+/*
+    Stefan Stankovic 23.02.2022
+
+    Ovaj se scss koristi za dizajn knowledge stranice (KnowledgeHub.html)
+*/
+
+@import "base";
+
+//TODO: redizajnirati About deo
+.Aboute {
+    background-image: linear-gradient(to top, rgba($green-text, 0.3), transparent);
+    position: absolute;
+    width: 50%;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px;
+
+    #{&}-content {
+        @include flexCenter;
+        font-size: 35px;
+        background-color: $ligh-yellow-bck;
+        color: $green-text;
+        height: 100%;
+    }
+}
+
+.main {
+    background-color: $ligh-yellow-bck;
+    color: $green-text;
+    @include flexCenter(column);
+
+    padding-top: 200px;
+    padding-bottom: 80px;
+    h2 {
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+    .up {
+        position: relative;
+        width: 90%;
+        img {
+            width: 670px;
+        }
+        .holder {
+            width: 60%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include flexCenter(column);
+            justify-content: space-evenly;
+            > div {
+                float: right;
+                background-color: $green-btn;
+                color: $white-text;
+                font-weight: 600;
+                font-size: 25px;
+                padding: 25px;
+            }
+        }
+    }
+    .what {
+        margin-top: 70px;
+    }
+    .down {
+        width: 90%;
+        position: relative;
+        img {
+            width: 670px;
+            float: right;
+        }
+        div {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            background-color: $green-btn;
+            color: $white-text;
+            font-weight: bold;
+            width: 50%;
+            padding: 40px 20px;
+            transform: translateY(-50%);
+            p {
+                font-size: 25px;
+            }
+            a {
+                @include flexCenter;
+                @include button($yellow-bck, $green-text);
+                margin: auto {
+                    top: 20px;
+                }
+            }
+        }
+    }
+}

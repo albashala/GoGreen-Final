@@ -1,0 +1,69 @@
+/*
+    Stefan Stankovic 22.02.2022
+
+    Ovaj se scss koristi za dizajn glavne stranice (index.html)
+*/
+
+@import "Base";
+
+.main {
+    background-color: $ligh-yellow-bck;
+    .big {
+        font-size: 50px;
+        font-weight: bold;
+        padding: 30px 0;
+    }
+    h2 {
+        color: $green-text;
+        text-align: center;
+        font-size: 30px;
+    }
+    .grid {
+        display: grid;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+        gap: 40px 0;
+        padding-bottom: 70px;
+        img {
+            margin: auto;
+            transition: $transition-time-long;
+            border-radius: 100%;
+            &:hover {
+                transform: rotateY(180deg);
+            }
+        }
+        div {
+            p {
+                display: block;
+                width: 80%;
+                margin: auto {
+                    top: 20px;
+                }
+            }
+            a {
+                @include flexCenter;
+                @include button($green-btn, $white-text);
+                margin: 25px auto;
+            }
+        }
+    }
+}
+
+.donate {
+    @include flexCenter(column);
+    background-image: url("../Images/Home/trees\ 1.png");
+
+    padding: 80px 0;
+    color: $white-text;
+    h2 {
+        font-weight: normal;
+    }
+    a {
+        @include flexCenter;
+        @include button($yellow-bck, $green-text);
+        margin-top: 45px;
+        font-weight: bold;
+    }
+}
