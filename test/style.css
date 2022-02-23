@@ -1,0 +1,235 @@
+
+header{
+    text-align: end;
+    background-color: #ecf2c4;
+
+
+}
+
+
+
+#header-title{
+    color:#78a612;
+    padding: 0;
+    margin: 0;
+    background-color: #ecf2c4;
+    font-size: 25px;
+    font-weight:bold;
+    font-family:'Helveta'
+}
+
+src img {
+    background-color: #EDF2c2
+}
+
+p { text-decoration: #3e5902; 
+    text-align: center;
+    font-family: 20px;
+}
+
+
+
+button {
+
+    font-weight: bold !important;
+color: #78a612;
+margin-left:0px;
+background-color: #78a612;
+border:none;
+padding: 15px 50px;
+text-align: left;
+margin: 4px 2px;
+cursor: pointer;
+font-size: 15px !important;
+color:white !important;
+display: inline-block;
+text-decoration: none;
+border-radius: 15px;
+box-shadow: 0 4px #999;
+}
+
+
+
+button1 { color: #77A612;
+    margin-right:100px;
+    text-align: end;
+
+}
+
+table {
+    margin-left: 0px;
+    color: #EDF2c2;
+}
+table{
+    margin-left: 100px;
+    color: #ECF22E;
+    margin-right:500px;
+}
+label{
+    
+    margin-right:500px;
+    text-align: center;
+
+}
+
+.center{
+    margin: auto;
+    width: 500px;
+  
+    padding: 10px;
+} 
+
+#footer-text{
+    font-size:18px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+
+.footer{
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    background-color: #eef12e;
+    margin: auto;
+    margin-right: 25px;
+    margin-top: 25px;
+ margin-left: 0px;
+
+    
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+      font-family:arial; color:#afbdcf; text-transform:uppercase; font-size:16px; font-weight:normal;
+    margin-bottom:20px;
+    width:500px; height:50px; background:#F1F2F4;  
+    position:absolute; top:0px; left:0px;margin: 0px;
+    padding: 18px;
+    text-align: center;
+  }
+
+
+  
+  
+  input[type="text"] {
+      
+      background-color: #ecf2c4;
+    border: 2px solid #afbdcf;
+    border-radius: 5px;
+    height: 47px;
+    width:400px;
+    color: #000000;
+    font-size: 14px;
+    padding-left: 20px;
+    box-shadow: none;  
+  }
+  
+
+  #start-petition{
+    margin-left: 350px;
+    margin-top:100px;
+  }
+
+.sign-button{
+    margin-left:250px;
+}
+ 
+
+  .link-petition{
+      margin-left:250px !important;
+      padding-left:150px ;
+  }
+  
+  input:focus + label, input:valid + label{
+    font-size: 12px;
+    color: #afbdcf;
+    top: -5px;
+    left:10px;
+    background: #ffffff;
+    padding: 0px 5px 0px 5px;
+  }
+  
+  .input_wrap {
+      align-self: center;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    width:auto; height:auto; position:relative;
+  }
+  
+ 
+  
+  input[type="text"]:focus {outline:none;}
+  
+  
+  .parent {
+    display: flex ;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    }
+
+
+    .signature-parent{
+        display: flex;
+justify-content: space-between;
+    }
+
+
+    .signature-row{
+        background-color: #ecf2c4;
+        display: flex;
+        margin-right:20px;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 25px;
+    
+    }
+
+    .signature-row input{
+        background-color: white;
+    }
+
+    .give-signature{
+        align-self: flex-start;
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 10px;
+        color:#78a612;
+        font-family:'Helvetica';
+        padding-bottom:10px;
+    }
+
+ 

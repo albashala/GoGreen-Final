@@ -13,8 +13,8 @@
 <body>
     <header>
         <div class="up">
-            <a href="Index.html" class="logo">
-                <img src="../Images/Logo.png" alt="Logo...">
+            <a href="Index.html">
+                <img src="../Images/Logo.png" alt="Logo..." class="logo">
             </a>
             <nav>
                 <ul>
@@ -24,6 +24,14 @@
                     <li><a href="Emissions.html">Emissions</a></li>
                 </ul>
             </nav>
+        </div>
+        <!--Slike Koje se slajdaju sa desna na levo-->
+        <div class="holder">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="filter"></div>
         </div>
     </header>
 
@@ -40,7 +48,10 @@
         <div class="Other">
             <p>Other:</p>
             <input type="number" placeholder="input value">
-            <a href="">Donate</a>
+            <!-- 
+                 TODO Dodati alert kada se pritisne na dugme
+            -->
+            <a onclick="console.log('Hvala na Donaciji')">Donate</a>
         </div>
     </div>
 
@@ -48,15 +59,14 @@
 
     <footer>
         <div class="left">
-            <a href="Index.html" class="logo">
-                <img src="../Images/Logo.png" alt="Logo...">
+            <a href="Index.html">
+                <img src="../Images/Logo.png" alt="Logo..." class="logo">
             </a>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
                 <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    Small acts, when multiplied by millions of people, can transform the world.
+                </p>
+                <p>If you ever feel like you can’t make a difference — you can and do.
                 </p>
             </div>
         </div>
@@ -69,6 +79,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../JS/SlideBar.js"></script>
 </body>
 
 </html>

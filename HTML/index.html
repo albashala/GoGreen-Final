@@ -4,19 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../Images/Logo.png">
     <title>Go Green</title>
+    <link rel="icon" href="../Images/Logo.png">
     <link rel="stylesheet" href="../CSS/all.min.css">
     <link rel="stylesheet" href="../CSS/Style.css">
-
 </head>
 
 <body>
 
     <header>
         <div class="up">
-            <a href="Index.html" class="logo">
-                <img src="../Images/Logo.png" alt="Logo...">
+            <a href="Index.html">
+                <img src="../Images/Logo.png" alt="Logo..." class="logo">
             </a>
             <nav>
                 <ul>
@@ -28,11 +27,18 @@
             </nav>
         </div>
 
-
-        <div class="down
-        ">
+        <div class="down">
             <h1>Save the world </h1>
             <h2>Go Green</h2>
+        </div>
+
+        <!--Slike Koje se slajdaju sa desna na levo-->
+        <div class="holder">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="filter"></div>
         </div>
 
     </header>
@@ -41,32 +47,28 @@
         <div>
             <h2 class="big">What we do?</h2>
         </div>
-        <!-- TODO: Dodati linkove-->
         <div class="grid">
             <div>
                 <h2>Knowledge Hub</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                <p>Check out our Knowledge Hub to be updated with mindblowing facts about our dearest friend - nature.
                 </p>
-                <a href="#">Learn more</a>
+                <a href="../HTML/KnowledgeHub.html">Learn more</a>
             </div>
-            <!--TODO Uredi sliku u Photoshop-->
             <img src="../Images/Home/knowledge.png" alt="knowledge...">
-            <img src="../Images/Home/petiti.png" alt="petiti.." style="
-            width: 40%;">
+            <img src="../Images/Home/petiti.png" alt="petiti.." style="width: 40%;">
             <div>
                 <h2>Create petitions</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                <p>Create or start a petition today to make a change! Get your friends to sign it too to spread awareness on the issue. 
+                    This can be one step forward to reach the relevant authorities.
                 </p>
-                <a href=" #">Learn more</a>
+                <a href="../HTML/petitions.html">Learn more</a>
             </div>
             <div>
                 <h2>Emission calculator</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                <p>Calculate how much is your individual carbon footprint taking into account your foodprint, vehicle emissions, and emissions from your home.
+                    This way you know how much green land you need to offset your emmisions.
                 </p>
-                <a href="#">Learn more</a>
+                <a href="../HTML/Emissions.html">Learn more</a>
             </div>
             <img src="../Images/Home/calc.png" alt="calc...">
         </div>
@@ -74,20 +76,19 @@
 
     <div class="donate">
         <h2>Become a part of our community by making a Donation</h2>
-        <a href="#"> Donate</a>
+        <a href="../HTML/Donations.html"> Donate</a>
     </div>
 
     <footer>
         <div class="left">
-            <a href="Index.html" class="logo">
-                <img src="../Images/Logo.png" alt="Logo...">
+            <a href="Index.html">
+                <img src="../Images/Logo.png" alt="Logo..." class="logo">
             </a>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
                 <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    Small acts, when multiplied by millions of people, can transform the world.
+                </p>
+                <p>If you ever feel like you can’t make a difference — you can and do.
                 </p>
             </div>
         </div>
@@ -100,6 +101,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../JS/SlideBar.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/all.min.css">
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Petitions.css">
     <title>Document</title>
     <link rel="icon" href="../Images/Logo.png">
 </head>
@@ -13,8 +13,8 @@
 <body>
     <header>
         <div class="up">
-            <a href="Index.html" class="logo">
-                <img src="../Images/Logo.png" alt="Logo...">
+            <a href="Index.html">
+                <img src="../Images/Logo.png" alt="Logo..." class="logo">
             </a>
             <nav>
                 <ul>
@@ -25,23 +25,85 @@
                 </ul>
             </nav>
         </div>
+
+        <div class="down">
+            <h1>Sign for a better world
+
+            </h1>
+        </div>
+
+        <!--Slike Koje se slajdaju sa desna na levo-->
+        <div class="holder">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="filter"></div>
+        </div>
     </header>
 
-    <div class="main">
 
+    <!-- TODO Preurediti ceo .main ponovo-->
+    <div class="main">
+        <button id="start-petition" style="margin-top:10px">Start a Petition</button>
+        <form>
+            <br>
+            <div class="parent">
+                <div class="input_wrap">
+                    <input type="text" placeholder="Name/Surname" required />
+                </div>
+
+                <div class="input_wrap">
+                    <input type="text" placeholder="Email" required />
+                </div>
+
+                <div class="input_wrap">
+                    <input type="text" placeholder="Phone Number" required />
+                </div>
+
+                <div class="input_wrap ">
+                    <input type="text" placeholder="What petition would you like to start" required />
+                </div>
+            </div>
+        </form>
+
+        <div class="center">
+            <button class="sign-button">
+                Sign a Petition
+            </button>
+        </div>
+
+        <form>
+            <div class="input_wrap link-petition">
+                <input type="text" placeholder="The link to your petition" required />
+
+            </div>
+        </form>
+
+        <div class="signature-parent">
+            <div></div>
+            <div class="signature-row">
+
+                <div class="give-signature">Your signature:
+
+                    <div id="line">
+                        <hr style="border-bottom: 2px solid black;" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
         <div class="left">
-            <a href="Index.html" class="logo">
-                <img src="../Images/Logo.png" alt="Logo...">
+            <a href="Index.html">
+                <img src="../Images/Logo.png" alt="Logo..." class="logo">
             </a>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
                 <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    Small acts, when multiplied by millions of people, can transform the world.
+                </p>
+                <p>If you ever feel like you can’t make a difference — you can and do.
                 </p>
             </div>
         </div>
@@ -54,6 +116,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../JS/SlideBar.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/all.min.css">
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Emissions.css">
     <title>Document</title>
     <link rel="icon" href="../Images/Logo.png">
 </head>
@@ -13,8 +13,8 @@
 <body>
     <header>
         <div class="up">
-            <a href="Index.html" class="logo">
-                <img src="../Images/Logo.png" alt="Logo...">
+            <a href="Index.html">
+                <img src="../Images/Logo.png" alt="Logo..." class="logo">
             </a>
             <nav>
                 <ul>
@@ -25,24 +25,95 @@
                 </ul>
             </nav>
         </div>
+        <div class="down">
+            <h1>Carbon Footprint Calculator</h1>
+        </div>
+        <!--Slike Koje se slajdaju sa desna na levo-->
+        <div class="holder">
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="element"></div>
+            <div class="filter"></div>
+        </div>
     </header>
 
+
+    <!-- TODO odraditi komplotatan .main sve od nule 
+        OVO JE UZASNO
+    -->
     <div class="main">
+        <div class="select">
+            <br>
+            <p>The goal of this calculation is to help you know how
+                <br> green land you need to offset your emmisions
+            </p>
+            <br>
+            <div class="div1">
+                <p> </p>
+                <h4> 1.YOUR FOODPRINT:</h4>
+                <form action="input">
+                    Your Dietary Preferences: <input type="text" name="UserName" value=""><br>
+                    Your Avg. Daily Calories: <input type="number" name="calories" value="" /><br>
+                    Your Foodprint CO2 Emmisions(tons/year): <input type="number" name="Emisions per year"
+                        value="" /><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
 
-
+            <div class="div2">
+                <h4> 2.CO2 EMISSIONS FROM YOUR VEHICLE:</h4>
+                <form action="input">
+                    Fuel compsution of your vehicle(avg): <input type="text" name="UserName" value=""><br>
+                    Gasoline CO2 Emmisions(kg/km) : <input type="number" name="calories" value="" /><br>
+                    Diesel CO2 Emmisions(kg/km): <input type="number" name="Emisions per year" value="" /><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="div3">
+                <h4> 3.CO2 EMISSIONS FROM YOUR HOME:</h4>
+                <form action="input">
+                    Number of People in Your Household : <input type="text" name="UserName" value="">
+                    <br>
+                    Household Utilities
+                    (Check All That Apply): <input type="text" name="Utilities" value="Eletricity" /><br>
+                    <input type="text" name="Utilities" value="Natural Gas" /><br>
+                    <input type="text" name="Utilities" value="Fuel oil" /><br>
+                    <input type="text" name="Utilities" value="Propan" /><br>
+                    Your Foodprint C02 Emmisions: <input type="text" name="Utilities" value="" /><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="div4">
+                <h4>4.OFFSETING YOUR C02 EMISSIONS</h4>
+                <form action="input">
+                    Number of Trees Needed To Remove Your <br>
+                    Carbon Footprint: <input type="text" name="UserName" value=""><br>
+                    Land Needed(hectares): <input type="number" name="calories" value="" /><br>
+                    Annual Donations to Remove Your Carbon Footprint: <input type="number" name="Emisions per year"
+                        value="" /><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="other">
+            <label for="text">Other:</label>
+            <input type="number" placeholder="input value">
+        </div>
     </div>
-
+    </div>
     <footer>
         <div class="left">
-            <a href="Index.html" class="logo">
-                <img src="../Images/Logo.png" alt="Logo...">
+            <a href="Index.html">
+                <img src="../Images/Logo.png" alt="Logo..." class="logo">
             </a>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
                 <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    Small acts, when multiplied by millions of people, can transform the world.
+                </p>
+                <p>If you ever feel like you can’t make a difference — you can and do.
                 </p>
             </div>
         </div>
@@ -55,6 +126,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../JS/SlideBar.js"></script>
 </body>
 
 </html>

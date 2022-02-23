@@ -7,12 +7,11 @@
 
 //logo
 .logo {
+    height: 65px;
     transition: $transition-time-long;
+
     &:hover {
         transform: rotatey(360deg);
-    }
-    img {
-        height: 65px;
     }
 }
 
@@ -20,14 +19,12 @@
 header {
     position: relative;
     height: 420px;
-    background-image: linear-gradient(#003f0075), url(../Images/Forest_01.jpg);
-    background-position: center bottom;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     color: white;
     padding: 15px;
     z-index: 0;
+    overflow: hidden;
 
     //upper div
     .up {
@@ -45,6 +42,7 @@ header {
                 li {
                     margin: 0 30px 0 0;
                     font-size: 18px;
+
                     a {
                         display: inline-block;
                         color: $white-text;
@@ -80,6 +78,32 @@ header {
         }
         h2 {
             font-size: 40px;
+        }
+    }
+
+    //image slider
+    .holder {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: flex;
+        transition: 800ms;
+        z-index: -1;
+        .filter {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(#003f0075);
+        }
+        .element {
+            background-image: url(../Images/Header/1.jpg);
+            width: 100vw;
+            height: 100%;
+            background-size: cover;
         }
     }
 }
